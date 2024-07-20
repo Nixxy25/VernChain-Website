@@ -7,7 +7,7 @@ const App = () => {
     <div>
       <Heropage />
       <AboutUs />
-      <ServicesPage /
+      <ServicesPage />
     </div>
   )
 }
