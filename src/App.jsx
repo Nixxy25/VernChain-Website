@@ -1,6 +1,9 @@
-import Heropage from "./components/sections/heropage";
+import Heropage from "./components/sections/Header/heropage";
 import AboutUs from "./components/sections/aboutUs";
 import ServicesPage from "./components/sections/servicespage";
+import PricePage from "./components/sections/pricepage";
+import TestimonialComponent from "./components/sections/Testimonial/testimonialComponent";
+import "./App.css";
 
 const App = () => {
   return (
@@ -8,6 +11,8 @@ const App = () => {
       <Heropage />
       <AboutUs />
       <ServicesPage />
+      <PricePage />
+      <TestimonialComponent />
     </div>
   )
 }

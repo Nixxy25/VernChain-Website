@@ -1,5 +1,5 @@
 import aboutImg from "../../assets/Images/Frame 29.png";
-import Buttons from "../buttons";
+import Buttons from "../Buttons/buttons";
 
 
 const AboutUs = () => {

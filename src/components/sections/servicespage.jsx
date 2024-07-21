@@ -2,7 +2,7 @@ import { services } from "../../data";
 
 const ServicesPage = () => {
   return (
-    <div className="flex flex-col my-6 mx-24 my-10  gap-12">
+    <div className="flex flex-col mx-24 my-12 pb-32 gap-12">
         <div className="text-center">
             <h1 className="uppercase text-xl text-[#c9fa49] font-bold">Services</h1>
             <h2 className="text-2xl font-bold">Innovate with Blockchain Technology</h2>

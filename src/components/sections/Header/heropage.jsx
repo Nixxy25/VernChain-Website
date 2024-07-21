@@ -1,10 +1,10 @@
-import Navbar from "./navbar";
-import Buttons from "../buttons";
-import HeroImage from "../../assets/Images/vernchain-image.png";
-import logo1 from "../../assets/Images/Logo (3).png";
-import logo2 from "../../assets/Images/Logo (4).png";
-import logo3 from "../../assets/Images/Logo (5).png";
-import logo4 from "../../assets/Images/Logo (6).png";
+import Navbar from "../Header/navbar";
+import Buttons from "../../Buttons/buttons";
+import HeroImage from "../../../assets/Images/vernchain-image.png";
+import logo1 from "../../../assets/Images/Logo (3).png";
+import logo2 from "../../../assets/Images/Logo (4).png";
+import logo3 from "../../../assets/Images/Logo (5).png";
+import logo4 from "../../../assets/Images/Logo (6).png";
 
 
 const Heropage = () => {

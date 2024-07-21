@@ -1,5 +1,5 @@
-import vernchainLogo from "../../assets/Images/vernchain.png"
-import Buttons from "../buttons";
+import vernchainLogo from "../../../assets/Images/vernchain.png"
+import Buttons from "../../Buttons/buttons";
 
 const Navbar = () => {
     return(
