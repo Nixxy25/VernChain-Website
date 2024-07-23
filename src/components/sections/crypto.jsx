@@ -6,16 +6,16 @@ import Buttons from "../Buttons/buttons";
 
 const CryptoPage = () => {
   return (
-    <div className="bg-[#c9fa49] relative my-20">
-        <div className="absolute bottom-0"><img src={image1}></img></div>
-        <div className="absolute right-0"><img src={image2}></img></div>
-        <div className="absolute"><img src={image3}></img></div>
-        <div className="absolute bottom-0 right-0"><img src={image4}></img></div>
+    <div className="bg-[#c9fa49] relative my-20 ">
+        <div className="absolute bottom-0 max-sm:w-32"><img src={image1}></img></div>
+        <div className="absolute right-0 max-sm:w-32"><img src={image2}></img></div>
+        <div className="absolute max-sm:w-32"><img src={image3}></img></div>
+        <div className="absolute bottom-0 right-0 max-sm:w-32"><img src={image4}></img></div>
 
-        <div className="flex justify-center items-center h-[28rem] ">
+        <div className="flex justify-center items-center h-[28rem] max-sm:h-[20rem]  ">
             <div className="flex flex-col justify-center items-center">
-                <h1 className="font-bold text-[#191919] text-4xl tracking-wider pb-6">Start Your Crypto Odyssey With Us</h1>
-                <h3 className="text-lg text-[#191919] pb-12 tracking-widest">Lorem ipsum dolor sit amet consectetur. Duis morbi scelerisque lectus sodales rhoncus.</h3>
+                <h1 className="font-bold text-[#191919] text-4xl tracking-wider pb-6 max-sm:text-2xl">Start Your Crypto Odyssey With Us</h1>
+                <h3 className="text-lg text-[#191919] pb-12 tracking-widest max-sm:text-sm">Lorem ipsum dolor sit amet consectetur. Duis morbi scelerisque lectus sodales rhoncus.</h3>
                 <div className="flex gap-6 items-center">
                     <Buttons />
                     <Buttons />
