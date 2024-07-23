@@ -27,14 +27,17 @@ const responsive = {
 
 const TestimonialComponent = () => {
     return(
-        <div className="mr-24 ml-8 ">
+        <div className="mr-24 ml-8 my-20 ">
 
             <Carousel 
                 responsive={responsive} 
                 customButtonGroup={<TestimonialButtonGroup />} 
                 removeArrowOnDeviceType={["tablet", "mobile","desktop","superLargeDesktop"]}
+                renderButtonGroupOutside
                 swipeable={true}
                 draggable={true}
+                infinite={true}
+
             >
             {testimonial.map((items) => (
                 <Testimonial 

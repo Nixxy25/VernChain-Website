@@ -12,10 +12,10 @@ const Heropage = () => {
     <div className="">
         <Navbar />
 
-        <div className="relative flex justify-between items-center pb-60 ">
-            <div className="mx-24 my-6  flex flex-col gap-12 w-1/2 mt-40 z-10">
-                <h1 className="text-7xl font-bold">Trusted Crypto Preservation</h1>
-                <p className="text-xl font-bold">Lorem ipsum dolor sit amet consectetur. Duis morbi scelerisque lectus sodales rhoncus.</p>
+        <div className="relative flex justify-between items-center pb-64">
+            <div className="mx-24 my-6  flex flex-col gap-12  mt-40 z-10 w-1/2">
+                <h1 className="text-6xl font-bold text-white tracking-wider leading-[4rem] ">Trusted Crypto Preservation</h1>
+                <p className="text-xl font-[400] tracking-widest leadiong-[2rem] w-10/12" >Lorem ipsum dolor sit amet consectetur. Duis morbi scelerisque lectus sodales rhoncus.</p>
                 <div className="flex gap-8">
                     <Buttons />
                     <Buttons />

@@ -1,16 +1,16 @@
 
 :root {
-  font-family:"DM Sans" ;
+  font-family: 'Clash Display', sans-serif;
   line-height: 1.5;
   font-weight: 200;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgb(255, 255, 255);
   background-color: #1A1A1A;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;  
   -moz-osx-font-smoothing: grayscale;
 }
 

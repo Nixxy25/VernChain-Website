@@ -3,6 +3,9 @@ import AboutUs from "./components/sections/aboutUs";
 import ServicesPage from "./components/sections/servicespage";
 import PricePage from "./components/sections/pricepage";
 import TestimonialComponent from "./components/sections/Testimonial/testimonialComponent";
+import CryptoPage from "./components/sections/crypto";
+import NewsPage from "./components/sections/newspage";
+import Footer from "./components/sections/footer";
 import "./App.css";
 
 const App = () => {
@@ -13,6 +16,9 @@ const App = () => {
       <ServicesPage />
       <PricePage />
       <TestimonialComponent />
+      <CryptoPage />
+      <NewsPage />
+      <Footer />
     </div>
   )
 }

@@ -1,10 +1,53 @@
-import image1 from "../src/assets/Images/Illustration 1.png"
-import image2 from "../src/assets/Images/Illustration 6.png"
-import image3 from "../src/assets/Images/Illustration 4.png"
-import image4 from "../src/assets/Images/Illustration 3.png"
-import image5 from "../src/assets/Images/Illustration 5.png"
-import image6 from "../src/assets/Images/Illustration 7.png"
-import testimonailImage from "../src/assets/Images/unsplash_rpF3p_RrE9g.png"
+import image1 from "../src/assets/Images/Illustration 1.png";
+import image2 from "../src/assets/Images/Illustration 6.png";
+import image3 from "../src/assets/Images/Illustration 4.png";
+import image4 from "../src/assets/Images/Illustration 3.png";
+import image5 from "../src/assets/Images/Illustration 5.png";
+import image6 from "../src/assets/Images/Illustration 7.png";
+import testimonailImage from "../src/assets/Images/unsplash_rpF3p_RrE9g.png";
+import newsImage1 from "../src/assets/Images/image 4.png";
+import newsImage2 from "../src/assets/Images/unsplash_5mK7vv6dHlg.png";
+import newsImage3 from "../src/assets/Images/unsplash_FNZDYyI6rwc (1).png";
+import newsImage4 from "../src/assets/Images/unsplash_EMPZ7yRZoGw.png";
+import newsImage5 from "../src/assets/Images/image 5.png";
+
+export const newsData = [
+    {
+        id:1,
+        imageUrl: newsImage1,
+        title:"Green Crypto: Sustainable Blockchain Trends",
+        description:"Lorem ipsum dolor sit amet consectetur. Ornare viverra iaculis quam adipiscing vestibulum feugiat. Lobortis odio nisl eu vestibulum.",
+        date:"Nov. 28, 2023",
+    },
+    {
+        id:2,
+        imageUrl: newsImage2,
+        title:"Rising NFT Trends: The Latest Buzz",
+        description:"Lorem ipsum dolor sit amet consectetur. Ornare viverra iaculis quam adipiscing vestibulum feugiat. Lobortis odio nisl eu vestibulum.",
+        date:"Nov. 28, 2023",
+    },
+    {
+        id:3,
+        imageUrl: newsImage3,
+        title:"Blockchain Boosts Supply Chain Efficiency",
+        description:"Lorem ipsum dolor sit amet consectetur. Ornare viverra iaculis quam adipiscing vestibulum feugiat. Lobortis odio nisl eu vestibulum.",
+        date:"Nov. 28, 2023",
+    },
+    {
+        id:4,
+        imageUrl: newsImage4,
+        title:"Blockchain Boosts Supply Chain Efficiency",
+        description:"Lorem ipsum dolor sit amet consectetur. Ornare viverra iaculis quam adipiscing vestibulum feugiat. Lobortis odio nisl eu vestibulum.",
+        date:"Nov. 28, 2023",
+    },
+       {
+        id:5,
+        imageUrl: newsImage5,
+        title:"Rise of Tokenization in Blockchain",
+        description:"Lorem ipsum dolor sit amet consectetur. Ornare viverra iaculis quam adipiscing vestibulum feugiat. Lobortis odio nisl eu vestibulum.",
+        date:"Nov. 28, 2023",
+    },
+]
 
 export const testimonial = [
     {
