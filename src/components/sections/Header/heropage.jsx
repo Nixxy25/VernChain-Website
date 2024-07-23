@@ -12,9 +12,9 @@ const Heropage = () => {
     <div className="">
         <Navbar />
 
-        <div className="relative flex justify-between items-center pb-64">
-            <div className="mx-24 my-6  flex flex-col gap-12  mt-40 z-10 w-1/2">
-                <h1 className="text-6xl font-bold text-white tracking-wider leading-[4rem] ">Trusted Crypto Preservation</h1>
+        <div className="relative flex max-sm:flex-col pb-64 max-sm:pb-40 ">
+            <div className="mx-24 my-6  flex flex-col gap-12  mt-40 z-10 w-1/2 max-sm:w-full max-sm:mx-8 max-sm:mt-10">
+                <h1 className="text-6xl font-bold text-white tracking-wider leading-[4rem] max-sm:text-3xl ">Trusted Crypto Preservation</h1>
                 <p className="text-xl font-[400] tracking-widest leadiong-[2rem] w-10/12" >Lorem ipsum dolor sit amet consectetur. Duis morbi scelerisque lectus sodales rhoncus.</p>
                 <div className="flex gap-8">
                     <Buttons />
@@ -22,11 +22,11 @@ const Heropage = () => {
                 </div>
             </div>
 
-            <div className="absolute top-0 -right-0 w-3/4 -z-10"><img className="" src={HeroImage}></img></div>
+            <div className="absolute top-0  -right-0 w-3/4 max-sm:w-full max-sm:top-60 lg:-z-10"><img className="" src={HeroImage}></img></div>
         </div>
 
         <div className="mx-6 ">
-            <div className="flex px-4 py-8 rounded-md justify-around bg-[#c9fa49] ">
+            <div className="grid grid-cols-4 px-4 py-8 rounded-md justify-around items-center bg-[#c9fa49] max-sm:grid-cols-2 max-sm:gap-6 ">
                 <img src={logo1} alt="logo1"></img>
                 <img src={logo2} alt="logo2"></img>
                 <img src={logo3} alt="logo3"></img>
