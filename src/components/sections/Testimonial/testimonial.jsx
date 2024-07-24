@@ -4,7 +4,7 @@ import abbrvEnd from "../../../assets/Images/Frame 45.png";
 
 const Testimonial = ({ name,company,description,image} ) => {
   return (
-    <div className="grid grid-cols-2 items-center max-sm:grid-cols-1">
+    <div className="grid grid-cols-2 items-center max-lg:grid-cols-1 max-lg:flex max-lg:flex-col-reverse">
 
        <div className=""><img src={image}></img></div>
 

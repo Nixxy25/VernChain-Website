@@ -27,7 +27,7 @@ const responsive = {
 
 const TestimonialComponent = () => {
     return(
-        <div className="mr-24 ml-8 my-20 max-sm:mx-8">
+        <div className="mr-24 ml-8 my-20 max-sm:mx-8 max-lg:ml-16">
 
             <Carousel 
                 responsive={responsive} 

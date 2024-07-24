@@ -31,14 +31,6 @@ export const BlackButtons = ({children}) => {
   );
 };
 
-export const UniqueBlackButtons = ({children}) => {
-  return (
-    <div>
-        <button className="rounded-3xl cursor-pointer text-lg text-[#2A2A2A] font-[400] border border-[#2A2A2A] tracking-widest text-[#b3de43] px-4 py-2">
-          {children}
-        </button>
-    </div>
-  );
-};
+
 
 

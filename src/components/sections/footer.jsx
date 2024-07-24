@@ -6,11 +6,11 @@ import vernchainLogo from "../../assets/Images/vernchain.png";
 
 const Footer = () => {
   return (
-    <div className="mt-12 px-24 pt-12  pb-6 flex flex-col gap-10 border-t border-[#c9fa49] bg-[#2A2A2A] max-sm:px-8">
-        <div className="justify-between flex lg:items-center max-sm:flex-col gap-8">
+    <div className="mt-12 px-24 pt-12  pb-6 flex flex-col gap-10 border-t border-[#c9fa49] bg-[#2A2A2A] max-sm:px-8 max-lg:px-16">
+        <div className="justify-between flex md:items-center max-sm:flex-col gap-8">
             <div className="flex gap-6 flex-col w-2/5 max-sm:w-full">
                 <div className="w-64 max-sm:w-48"><img src={vernchainLogo}></img></div>
-                <h3 className="text-lg leading-8 tracking-widest">Lorem ipsum dolor sit amet consectetur. Fusce nisl lacus elementum neque.</h3>
+                <h3 className="text-lg  leading-8 tracking-widest">Lorem ipsum dolor sit amet consectetur. Fusce nisl lacus elementum neque.</h3>
             </div>
 
             <div className="flex gap-6 flex-col">
@@ -25,9 +25,9 @@ const Footer = () => {
 
         <div>
             <div>
-                <div className=" grid grid-cols-6  items-center border-b border-gray-400 pb-4 max-sm:grid-cols-1 max-sm:gap-6">
-                    <ul className="col-start-1 col-span-3 text-xl font-bold max-sm:col-span-2">
-                        <div className="flex justify-between tracking-widest max-sm:flex-col max-sm:gap-4">
+                <div className=" grid grid-cols-6 max-lg:flex max-lg:flex-col max-lg:gap-6 md:items-center border-b border-gray-400 pb-4 max-sm:grid-cols-1 max-sm:gap-6">
+                    <ul className="col-start-1 col-span-3 text-xl max-lg:text-lg font-bold max-sm:col-span-2">
+                        <div className="flex justify-between tracking-widest max-sm:flex-col max-lg:gap-4">
                             <li>Home</li>
                             <li>About</li>
                             <li>Services</li>
@@ -38,11 +38,11 @@ const Footer = () => {
                     
 
                     <div className="col-start-5 col-span-7 max-sm:col-span-2 max-sm:pb-6">
-                        <div className="flex lg:justify-end  gap-5">
-                            <img className="max-sm:h-10" src={whatsapp}></img>
-                            <img className="max-sm:h-10" src={X}></img>
-                            <img className="max-sm:h-10" src={facebook}></img>
-                            <img className="max-sm:h-10" src={instagram}></img>
+                        <div className="flex lg:justify-end  gap-6">
+                            <img className="max-sm:h-10 max-lg:h-12" src={whatsapp}></img>
+                            <img className="max-sm:h-10 max-lg:h-12" src={X}></img>
+                            <img className="max-sm:h-10 max-lg:h-12" src={facebook}></img>
+                            <img className="max-sm:h-10 max-lg:h-12" src={instagram}></img>
                         </div>
                     </div>
                 </div>

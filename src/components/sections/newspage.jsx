@@ -17,7 +17,7 @@ const responsive = {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 1
+      items: 2
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -30,7 +30,7 @@ const NewsPage = () => {
     <div className='my-24 flex flex-col gap-12'>
         <div className='flex justify-center items-center flex-col gap-2'>
             <h3 className='font-bold text-xl text-[#c9fa49] tracking-[0.4rem] uppercase'>News</h3>
-            <h1 className='font-bold text-3xl tracking-widest max-sm:text-2xl max-sm:text-center'>Dive into Our Dynamic News Feed</h1>
+            <h1 className='font-bold text-3xl tracking-widest max-sm:text-2xl max-sm:text-center max-sm:mx-8'>Dive into Our Dynamic News Feed</h1>
         </div>
 
         <div className='flex flex-col gap-10'>
@@ -47,7 +47,7 @@ const NewsPage = () => {
             >
             {newsData.map((items)=> (
                 <div key={items.id} className='flex justify-evenly items-center'>
-                    <div className='border border-[#c9fa49] bg-[#2A2A2A] w-3/4 h-[32rem] rounded-2xl pb-8'>
+                    <div className='border border-[#c9fa49] bg-[#2A2A2A] w-3/4 h-[34rem] rounded-2xl pb-8'>
                         <img src={items.imageUrl} className='rounded-t-2xl '></img>
                         <div className='p-6 flex flex-col gap-6 bg-[#2A2A2A] rounded-b-2xl'>
                             <h2 className='font-bold  tracking-widest'>{items.title}</h2>

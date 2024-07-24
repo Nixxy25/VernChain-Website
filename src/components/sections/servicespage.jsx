@@ -2,13 +2,13 @@ import { services } from "../../data";
 
 const ServicesPage = () => {
   return (
-    <div className="flex flex-col mx-24 my-12 pb-32 gap-12 max-sm:mx-8">
+    <div className="flex flex-col mx-24 my-12 pb-32 gap-12 max-sm:mx-8 max-lg:mx-16">
         <div className="text-center flex flex-col gap-2">
             <h1 className="uppercase text-xl text-[#c9fa49] font-bold tracking-[0.4rem]">Services</h1>
             <h2 className="text-4xl tracking-widest  font-bold max-sm:text-xl">Innovate with Blockchain Technology</h2>
         </div>
       
-        <div className="grid grid-cols-3 gap-10 items-center max-sm:grid-cols-1">
+        <div className="grid grid-cols-3 gap-10 items-center max-sm:grid-cols-1 max-lg:grid-cols-2">
             {services.map((item) => (
                 <div key={item.id} className="flex flex-col text-center gap-6 items-center" >
                     <img src={item.imageUrl} className=""/>
