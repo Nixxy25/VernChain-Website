@@ -1,5 +1,6 @@
 import { priceData } from "../../data";
-import Buttons from "../Buttons/buttons";
+import { PrimaryButtons } from "../Buttons/buttons";
+import { BlackButtons } from "../Buttons/buttons";
 import check from "../../assets/Images/material-symbols_check.png";
 
 const PricePage = () => {
@@ -12,12 +13,12 @@ const PricePage = () => {
                 <h2 className="font-bold text-4xl pb-4 tracking-widest max-sm:text-2xl">Flexible Pricing for Every Project</h2>
                 <p className="pb-6 text-lg leading-8 tracking-widest">Lorem ipsum dolor sit amet consectetur. Sapien tortor purus vivamus mi non commodo 
                 pellentesque iaculis. Enim pellentesque maecenas mauris varius.</p>
-                <Buttons />
+                <PrimaryButtons>Learn More</PrimaryButtons>
             </div>
 
             <div className="flex col-start-3 col-span-7 gap-8 max-sm:col-span-2 max-sm:flex-col">
-                {priceData.map((items) => (
-                    <div key={items.id} className="border bg-[#191919] border-[#c9fa49] text-lg p-8 rounded-3xl h-[32rem] flex flex-col gap-8 items-center text-center">
+                {priceData.map((items, index) => (
+                    <div key={index} className={` ${index === 1 ? "bg-[#c9fa49] text-[#191919] font-[300]" : "bg-[#191919]"}  border border-[#c9fa49] text-lg p-8 rounded-3xl h-[32rem] flex flex-col gap-8 items-center text-center`}>
                         <h3 className="font-bold text-xl tracking-wider">{items.title}</h3>
                         <div className="flex items-end">
                             <span className="font-bold text-5xl">$</span>
@@ -29,13 +30,18 @@ const PricePage = () => {
                             {items.detail.map((details, index) => (
                                 <li key={index}>
                                     <div className="flex gap-2">
-                                        <img src={check}></img>
+                                        <img className="" src={check}></img>
                                         <h3>{details}</h3>
                                     </div>
                                 </li>
                             ))}
                         </ul>
-                        <div className=""><Buttons /></div>
+                        <div className="">
+                        {index === 1 
+                            ? <BlackButtons>Get Started</BlackButtons>
+                            : <PrimaryButtons>Get Started</PrimaryButtons>
+                        }
+                            </div>
                     </div>
                 ))}
             </div>

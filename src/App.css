@@ -2,4 +2,6 @@
   box-shadow: -3opx 30px 20px rgba(196, 10, 10, 0.3);
 }
 
-
+.check-icon{
+  filter: invert(1%) sepia(3%) saturate(223%) hue-rotate(314deg) brightness(99%) contrast(82%);
+}

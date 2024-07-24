@@ -1,5 +1,6 @@
 import Navbar from "../Header/navbar";
-import Buttons from "../../Buttons/buttons";
+import { PrimaryButtons } from "../../Buttons/buttons";
+import { SecondaryButtons } from "../../Buttons/buttons";
 import HeroImage from "../../../assets/Images/vernchain-image.png";
 import logo1 from "../../../assets/Images/Logo (3).png";
 import logo2 from "../../../assets/Images/Logo (4).png";
@@ -17,8 +18,8 @@ const Heropage = () => {
                 <h1 className="text-6xl font-bold text-white tracking-wider leading-[4rem] max-sm:text-3xl ">Trusted Crypto Preservation</h1>
                 <p className="text-xl font-[400] tracking-widest leadiong-[2rem] w-10/12" >Lorem ipsum dolor sit amet consectetur. Duis morbi scelerisque lectus sodales rhoncus.</p>
                 <div className="flex gap-8">
-                    <Buttons />
-                    <Buttons />
+                    <SecondaryButtons>Get Started</SecondaryButtons>
+                    <PrimaryButtons>Learn More</PrimaryButtons>
                 </div>
             </div>
 

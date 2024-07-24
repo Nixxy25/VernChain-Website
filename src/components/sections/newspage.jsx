@@ -2,7 +2,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { newsData } from '../../data';
 import more from "../../assets/Images/Vector (5).png"
-import Buttons from '../Buttons/buttons';
+import { PrimaryButtons } from '../Buttons/buttons';
 
 const responsive = {
     superLargeDesktop: {
@@ -65,7 +65,7 @@ const NewsPage = () => {
             ))}
             </Carousel>
 
-            <div className='flex justify-center items-center'><Buttons /></div>
+            <div className='flex justify-center items-center'><PrimaryButtons>See More</PrimaryButtons></div>
         </div>
     </div>
   )

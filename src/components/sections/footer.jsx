@@ -2,7 +2,7 @@ import whatsapp from "../../assets/Images/ri_whatsapp-line.png";
 import facebook from "../../assets/Images/ri_facebook-fill.png";
 import instagram from "../../assets/Images/ri_instagram-line.png";
 import X from "../../assets/Images/Frame 92.png";
-import vernchainLogo from "../../assets/Images/vernchain.png"
+import vernchainLogo from "../../assets/Images/vernchain.png";
 
 const Footer = () => {
   return (
@@ -47,7 +47,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="flex pt-4 justify-between text-lg tracking-widest max-sm:flex-col gap-4">
+                <div className="flex pt-4 justify-between lg:text-lg tracking-widest max-sm:flex-col gap-4">
                     <div>© 2024 Vernchain Template  •  All Rights Reserved</div>
                     <div className="flex gap-6">
                         <p>Terms</p>

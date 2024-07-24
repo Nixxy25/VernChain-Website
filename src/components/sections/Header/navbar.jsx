@@ -1,5 +1,5 @@
 import vernchainLogo from "../../../assets/Images/vernchain.png"
-import Buttons from "../../Buttons/buttons";
+import { PrimaryButtons } from "../../Buttons/buttons";
 
 const Navbar = () => {
     return(
@@ -14,7 +14,7 @@ const Navbar = () => {
                         <li>Services</li>
                         <li>Price</li>
                         <li>News</li>
-                        <li><Buttons /></li>
+                        <li><PrimaryButtons>Get Started</PrimaryButtons></li>
                     </ul>
                 </div>
                 
