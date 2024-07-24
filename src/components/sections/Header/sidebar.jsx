@@ -3,9 +3,9 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
+import { PrimaryButtons } from '../../Buttons/buttons';
 
 
 export default function AnchorTemporaryDrawer() {
@@ -18,10 +18,8 @@ export default function AnchorTemporaryDrawer() {
     setNavBarOpen(open);
   };
 
- 
-
   return (
-    <div>
+    <div className=''>
         <Button onClick={toggleDrawer(true)}>
             <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
             <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -30,16 +28,21 @@ export default function AnchorTemporaryDrawer() {
             </button>
         </Button>
         <Drawer
-        anchor="left"
+        anchor="right"
         open={navBarOpen}
         onClose={toggleDrawer(false)}>
+        <div className='bg-[#1a1a1a]  h-screen '>
         <Box
-            sx={{ width: navBarOpen === 'top' || navBarOpen === 'bottom' ? 'auto' : 250 }}
+            sx={{ width: navBarOpen === 'top' || navBarOpen === 'bottom' ? 'auto' : 230 }}
             role="presentation"
-            onClick={toggleDrawer(false)}
-            onKeyDown={toggleDrawer(false)}
-            className='my-6 bg-red-900'>
-            <List>
+          
+            className='my-6  flex flex-col gap-8 justify-center items-center text-white'>
+            <div>
+                <ListItemButton>
+                    <ListItemText primary="X" className='font-bold' onClick={toggleDrawer(false)}  />
+                </ListItemButton>
+            </div>
+            <List className='flex flex-col justify-center items-center' >
                 <ListItemButton>
                     <ListItemText primary="Home" />
                 </ListItemButton>
@@ -55,9 +58,12 @@ export default function AnchorTemporaryDrawer() {
                 <ListItemButton>
                 <ListItemText primary="News" />
                 </ListItemButton>
+                <ListItemButton>
+                    <PrimaryButtons>Get Started</PrimaryButtons>
+                </ListItemButton>
             </List>
         </Box>
-        
+        </div>
         </Drawer>
         
   

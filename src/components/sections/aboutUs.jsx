@@ -4,8 +4,8 @@ import { PrimaryButtons } from "../Buttons/buttons";
 
 const AboutUs = () => {
   return (
-    <div>
-        <div className="grid grid-cols-2 justify-between gap-20 items-center lg:mr-16 max-sm:grid-cols-1 ">
+    <div className="max-sm:my-20 pb-20">
+        <div className="grid grid-cols-2 justify-between gap-20 items-center lg:mr-16 max-sm:grid-cols-1 max-sm:flex max-sm:flex-col-reverse ">
             <div className="max-sm:mr-16"><img src={aboutImg} alt="aboutImg"></img></div>
 
             <div className="max-sm:pl-8 max-sm:mr-0">
