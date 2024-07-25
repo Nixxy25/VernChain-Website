@@ -73,8 +73,8 @@ const App = (props) => {
       <Footer />
 
       <ScrollTop {...props}>
-      <Fab size="small" aria-label="scroll back to top" className="">
-        <KeyboardArrowUpIcon />
+      <Fab size="medium" aria-label="scroll back to top" style={{background: "#1A1A1A"}}>
+        <KeyboardArrowUpIcon style={{fill: "#c9fa49"}} />
       </Fab>
     </ScrollTop>
     </div>

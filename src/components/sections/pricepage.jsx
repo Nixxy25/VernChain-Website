@@ -27,10 +27,10 @@ const PricePage = () => {
                         </div>
                         <p className="">{items.description}</p>
                         <ul className="pb-8 flex flex-col gap-2">
-                            {items.detail.map((details, index) => (
-                                <li key={index}>
+                            {items.detail.map((details, detailsIndex) => (
+                                <li key={detailsIndex}>
                                     <div className="flex gap-2">
-                                        <img className="" src={check}></img>
+                                        <img className={`${index === 1 ? "check-icon" : ""}`} src={check}></img>
                                         <h3>{details}</h3>
                                     </div>
                                 </li>

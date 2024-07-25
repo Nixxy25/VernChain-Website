@@ -1,11 +1,12 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
+import CloseIcon from '@mui/icons-material/Close';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { PrimaryButtons } from '../../Buttons/buttons';
+import { Button } from '@mui/material';
 
 
 export default function MobileNavbar() {
@@ -20,13 +21,13 @@ export default function MobileNavbar() {
 
   return (
     <div className=''>
-        <Button onClick={toggleDrawer(true)}>
-            <button  data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <div onClick={toggleDrawer(true)}>
+            <button  data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" className="inline-flex items-center p-2 mt-2 ms-3 rounded-lg lg:hidden  focus:outline-none focus:ring-2 focus:ring-[#b3de43]  dark:hover:bg-gray-700 dark:focus:ring-[#b3de43]">
             <svg className="w-8 h-8" aria-hidden="true" fill="#b3de43" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path clipRule="evenodd" fillRule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
             </svg>
             </button>
-        </Button>
+        </div>
         <Drawer
         anchor="right"
         open={navBarOpen}
@@ -37,16 +38,14 @@ export default function MobileNavbar() {
             role="presentation"
           
             className='my-6  flex flex-col gap-8 justify-center items-center text-white'>
-            <div>
-                <ListItemButton>
-                    <ListItemText primary="X" className='font-bold text-[#b3de43]' onClick={toggleDrawer(false)}  />
-                </ListItemButton>
-            </div>
+            <Button>
+                <CloseIcon onClick={toggleDrawer(false)} style={{fill:"#b3de43"}} />
+            </Button>
             <List className='flex flex-col justify-center items-center tracking-widest gap-2 font-[400]' >
-                <ListItemButton>
+                <ListItemButton >
                     <ListItemText primary="Home" />
                 </ListItemButton>
-                <ListItemButton>
+                <ListItemButton> 
                     <ListItemText primary="About" />
                 </ListItemButton>
                 <ListItemButton>
