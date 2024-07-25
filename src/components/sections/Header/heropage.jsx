@@ -1,4 +1,4 @@
-import Navbar from "../Header/navbar";
+import Navbar from "./navbar";
 import { PrimaryButtons } from "../../Buttons/buttons";
 import { SecondaryButtons } from "../../Buttons/buttons";
 import HeroImage from "../../../assets/Images/vernchain-image.png";
@@ -12,8 +12,7 @@ const Heropage = () => {
   return (
     <div className="">
         <Navbar />
-
-        <div className="relative flex max-sm:flex-col pb-64 max-sm:pb-40 max-lg:pb-32 max-sm:ml-8">
+        <div className="relative  flex max-sm:flex-col pb-64 max-sm:pb-40 max-lg:pb-32 max-sm:ml-8">
             <div className="mx-24 my-6  flex flex-col gap-12 mt-40 z-10 w-1/2 max-lg:w-full max-sm:mx-0 max-sm:mt-10  max-lg:mt-16 max-lg:mx-16">
                 <h1 className="text-6xl font-bold text-white tracking-wider leading-[4rem] max-lg:text-5xl max-sm:text-3xl">Trusted Crypto Preservation</h1>
                 <p className="text-xl font-[400] tracking-widest leading-[2rem] w-10/12" >Lorem ipsum dolor sit amet consectetur. Duis morbi scelerisque lectus sodales rhoncus.</p>
@@ -23,7 +22,7 @@ const Heropage = () => {
                 </div>
             </div>
 
-            <div className="absolute top-0  -right-0 w-3/4 max-sm:w-full max-sm:top-96 max-lg:top-12 lg:-z-10"><img className="" src={HeroImage}></img></div>
+            <div className="absolute top-0  -right-0 w-3/4 max-sm:w-full max-sm:top-96 max-lg:top-12 lg:z-10"><img className="" src={HeroImage}></img></div>
         </div>
 
         <div className="mx-6 max-sm:pt-40 ">

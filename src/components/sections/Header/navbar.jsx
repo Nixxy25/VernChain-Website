@@ -5,7 +5,7 @@ import MobileNavbar from "./sidebar";
 const Navbar = () => {
     return(
         <nav className="">
-            <div className="flex items-center justify-between px-24 py-6 pb-8 max-sm:px-8 max-lg:px-16">
+            <div className="flex  items-center justify-between px-24 py-6  max-sm:px-8 max-lg:px-16">
                 <div><img className="w-64 max-sm:w-44 max-lg:w-60 cursor-pointer" src={vernchainLogo}></img></div>
                 
                 <div className="max-lg:hidden">
