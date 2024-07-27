@@ -22,11 +22,12 @@ const Heropage = () => {
                 </div>
             </div>
 
-            <div className="absolute top-0  -right-0 w-3/4 max-sm:w-full max-sm:top-96 max-lg:top-12 lg:z-10"><img className="" src={HeroImage}></img></div>
+            <div className="absolute top-0  -right-0 w-3/4 max-sm:w-full max-sm:top-96 max-lg:top-12 lg:-z-10"><img className="" src={HeroImage}></img></div>
+            
         </div>
 
-        <div className="mx-6 max-sm:pt-40 ">
-            <div className="grid grid-cols-4 px-4 py-8 rounded-md justify-around items-center bg-[#c9fa49] max-sm:grid-cols-4 max-sm:gap-4 max-sm:py-4 max-lg:gap-8 ">
+        <div className="mx-6 max-sm:pt-40 relative">
+            <div className="grid grid-cols-4 z-10 px-4 py-8 rounded-md justify-around items-center bg-[#c9fa49] max-sm:grid-cols-4 max-sm:gap-4 max-sm:py-4 max-lg:gap-8 ">
                 <img src={logo1} alt="logo1"></img>
                 <img src={logo2} alt="logo2"></img>
                 <img src={logo3} alt="logo3"></img>

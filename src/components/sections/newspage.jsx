@@ -11,16 +11,16 @@ const responsive = {
       items: 5
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1200 },
       items: 3,
       
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1200, min: 640 },
       items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 640, min: 0 },
       items: 1
     }
   };
@@ -46,7 +46,7 @@ const NewsPage = () => {
                 
             >
             {newsData.map((items)=> (
-                <div key={items.id} className='flex justify-evenly items-center'>
+                <div key={items.id} className='flex justify-evenly items-center '>
                     <div className='border border-[#c9fa49] bg-[#2A2A2A] w-3/4 h-[34rem] rounded-2xl pb-8'>
                         <img src={items.imageUrl} className='rounded-t-2xl '></img>
                         <div className='p-6 flex flex-col gap-6 bg-[#2A2A2A] rounded-b-2xl'>
