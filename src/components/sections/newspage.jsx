@@ -47,8 +47,8 @@ const NewsPage = () => {
             >
             {newsData.map((items)=> (
                 <div key={items.id} className='flex justify-evenly items-center '>
-                    <div className='border border-[#c9fa49] bg-[#2A2A2A] w-3/4 h-[34rem] rounded-2xl pb-8'>
-                        <img src={items.imageUrl} className='rounded-t-2xl '></img>
+                    <div className='flex flex-col border border-[#c9fa49] bg-[#2A2A2A] w-3/4 h-[34rem] rounded-2xl pb-8'>
+                      <img src={items.imageUrl} className='rounded-t-2xl '></img>
                         <div className='p-6 flex flex-col gap-6 bg-[#2A2A2A] rounded-b-2xl'>
                             <h2 className='font-bold  tracking-widest'>{items.title}</h2>
                             <p className='tracking-widest text-sm'>{items.description}</p>

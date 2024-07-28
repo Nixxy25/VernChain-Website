@@ -1,4 +1,4 @@
-import Navbar from "./navbar";
+import Navbar from "../Header/navbar";
 import { PrimaryButtons } from "../../Buttons/buttons";
 import { SecondaryButtons } from "../../Buttons/buttons";
 import HeroImage from "../../../assets/Images/vernchain-image.png";
